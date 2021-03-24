@@ -21,9 +21,9 @@ const Cart = (): JSX.Element => {
   const { cart, removeProduct, updateProductAmount } = useCart();
 
   const cartFormatted = cart.map(product => ({
-      ...product,
-      priceFormatted: formatPrice(product.price),
-      subTotal: formatPrice(product.amount*product.price)
+    ...product,
+    priceFormatted: formatPrice(product.price),
+    subTotal: formatPrice(product.amount*product.price)
   }))
 
   const total =

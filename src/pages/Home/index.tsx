@@ -45,7 +45,7 @@ const Home = (): JSX.Element => {
   }, []);
 
   function handleAddProduct(id: number) {
-    addProduct(products[id].id)
+    addProduct(id)
   }
   
   return (
